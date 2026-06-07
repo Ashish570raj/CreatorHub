@@ -1,0 +1,21 @@
+spring:
+    application:
+        name: creatorstore
+
+# database configuration
+    datasource:
+        url: ${Database_url}
+        username: ${Database_username}
+        password: ${Database_password}
+        # driver-class-name: com.mysql.cj.jdbc.Driver
+
+# hibernate orm configuration
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+        properties:
+            hibernate:
+                format_sql: true
+                
+
