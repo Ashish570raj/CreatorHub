@@ -1,5 +1,9 @@
 package com.ashishraj.creatorstore.repositories;
 
-public interface ProductRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.ashishraj.creatorstore.entities.Product;
+
+public interface ProductRepository extends JpaRepository<Product, Long> {
 
 }
